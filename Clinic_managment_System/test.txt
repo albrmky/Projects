@@ -1,0 +1,36 @@
+Node* LL_Search(Node *Head, int value)
+{
+	Node *ptr = Head; // local copy of the head pointer
+
+	if ( ptr == NULL ) return ptr; // in case the list is empty
+
+	while ( (ptr->data != value)) // stop when ptr point to the node which have the required value
+	{
+		ptr = ptr->next;
+		if ( ptr == NULL ) return NULL; // case ptr reached the end of the list
+	}
+
+	return ptr;
+}
+
+
+
+//////////////////////////////////////////////////////////////
+
+
+	//display_reservations();
+
+//	print_slots();
+
+//	pat_data PA = { "ahmed hanafi", 35, "Male", "1111" };
+//	pat_data PB = { "sara elsayed ahmed", 30, "Female", "2222" };
+//	pat_data PC = { "zglol abo elfadl", 45, "Male", "3333" };
+//
+//	PatRec_Prepend(&Patients_record, PA);
+//	PatRec_Prepend(&Patients_record, PB);
+//	PatRec_Prepend(&Patients_record, PC);
+//
+//	PatRec_save(Patients_record);
+
+//
+//	PatRec_print(Patients_record);
